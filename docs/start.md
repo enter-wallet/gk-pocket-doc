@@ -1,11 +1,8 @@
 # 准备
 ### 1.0接口调用准备
 > 接口请求方法：POST  
->
 > 接口参数类型：JSON  
->
 > 接口签名算法：SHA256withRSA  
->
 > 接口Header必填参数，如下：  
 
 | name         | value       | description                          |
@@ -34,7 +31,13 @@ openssl pkcs8 -topk8 -inform PEM -in private.pem -outform PEM -nocrypt > private
 ### 3.0参数签名
 > Step 1.    
 
-所有有值参数都要参与签名，将值非空的参数按照参数名ASCII码字典序以键值对(key-value)格式用&连接排列组成字符串，例：key1=value1&key2=value2&key3=value3  
+`所有有值参数都要参与签名，将值非空的参数按照参数名ASCII码字典序以键值对(key-value)格式用&连接排列组成字符串，例：key1=value1&key2=value2&key3=value3`  
 > Step 2.    
 
-使用生成的RSA私钥，对Step1中生成的字符串进行签名(签名算法为SHA256WithRSA),得到的签名字符串放进Header中的Sign中
+`使用生成的RSA私钥，对Step1中生成的字符串进行签名(签名算法为SHA256WithRSA),得到的签名字符串放进Header中的Sign中`   
+
+> *注意事项：*  
+> *以参数名的ASCII码字典序排序，相关语言都有对应的函数可以直接使用，如：PHP的ksort, Java的Collection.sort*   
+> *参数名区分要区分大小写，大写的A ASCII码是65，小写的是97*   
+> *排序只与参数名有关，与参数值无关*    
+> *参数值为空则不参与签名*
