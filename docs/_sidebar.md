@@ -1,2 +1,3 @@
-* [首页](/)
-* [Guide](guide.md "The greatest guide in the world")
+* [前言](/)
+* [准备](start.md)
+* [用户注册](user_register.md)
