@@ -1,0 +1,22 @@
+{
+  "name": "gk-pocket-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./docs/index.html",
+  "scripts": {
+    "start": "docsify serve ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enter-wallet/gk-pocket-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enter-wallet/gk-pocket-doc/issues"
+  },
+  "homepage": "https://github.com/enter-wallet/gk-pocket-doc#readme",
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
