@@ -5,7 +5,7 @@
 > 接口签名算法：SHA256withRSA  
 > 接口Header必填参数，如下：  
 
-| name         | value       | description                          |
+| key          | value       | description                          |
 | ------------ | ----------- | ------------------------------------ |
 | Content-Type | application | 指定请求参数格式JSON                    |
 | appid        |             | 各网站的商户代码，由交易所分配            |

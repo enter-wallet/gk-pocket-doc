@@ -8,4 +8,35 @@ Method: `POST`
 | ------------ | ----------- | --------- | ---------------------------------- | -------------------- |
 | netSource    | string      | YES       | 用户来源                            |  A01/A02/A03 等      |
 | phone        | string      | YES       | 用户手机号，用Base64编码              | MTMONTU2Nj=          |
-| countryCode  | string      | YES       | 手机号国际区号                       | 86/63/886 等          |
+| countryCode  | string      | YES       | 手机号国际区号                       | 86/63/886 等         |
+| userId       | string      | NO        | 用户账号或ID                         | AX0001              |
+| password     | string      | NO        | 用户登录密码MD5                      | e99a18ccb74856a4545 |
+| nickName     | string      | NO        | 用户昵称                            | 萨菲罗斯              |
+| terminalType | string      | NO        | 用户设备类型                         | ios                 |
+
+> Request   
+
+```json
+{
+    "netSource": "A01",
+    "phone": "MTMONTU2Nj=",
+    "countryCode": "86",
+    "userId": "AX0001",
+    "password": "e99a18ccb74856a4545",
+    "nickName": "萨菲罗斯",
+    "terminalType": "ios"
+}
+```
+
+> Response   
+
+```json
+{
+    "head": {
+        "code": "0000",
+        "message": "成功",
+        "fieldErrs": null
+    },
+    "body": "DK10177"
+}
+```
