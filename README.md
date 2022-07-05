@@ -1,2 +1,2 @@
-# gk-pocket-doc
+# GkPocket-doc
 GK Doc for websites
