@@ -3,5 +3,7 @@
 * **接口**   
    * [新用户注册](api/user_register.md)
    * [检测是否注册](api/is_register.md)
-   * [获取地址](api/get_address.md)
-   * [获取上分链接](api/get_url.md)
+   * [获取提现(下分)地址](api/get_address.md)
+* **资金接口**   
+   * [获取支付方式](api/get_pay_type.md)
+   * [获取充值(上分)地址](api/create_order.md)
